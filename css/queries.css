@@ -1,0 +1,54 @@
+/*******************************/
+/*  768px */
+/******************************/
+
+@media (max-width: 1024px) {
+  .main-header {
+    gap: 2rem;
+    padding: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .menu-logo {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .search {
+    order: 4;
+    flex: 1 0 100%;
+  }
+
+  .options {
+    order: 3;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .btn:link,
+  .btn:visited,
+  .main-nav {
+    display: none;
+  }
+
+  .options {
+    gap: 2rem;
+  }
+}
+
+/*******************************/
+/*  375px */
+/******************************/
+
+@media (max-width: 639px) {
+  .options {
+    gap: 1.2rem;
+  }
+}
