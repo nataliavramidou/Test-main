@@ -6,7 +6,7 @@ menu.addEventListener("click", () => {
   header.classList.toggle("open");
 });
 
-console.log(navItems);
+//console.log(navItems);
 navItems.forEach((item) => {
   item.addEventListener("click", () => {
     header.classList.remove("open");
