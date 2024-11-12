@@ -437,6 +437,19 @@ img.logo {
 }
 /*****************************************************/
 /*      SWIPPER */
+
+:root {
+  --swiper-scrollbar-border-radius: 10px;
+  --swiper-scrollbar-top: auto;
+  --swiper-scrollbar-bottom: 4px;
+  --swiper-scrollbar-left: auto;
+  --swiper-scrollbar-right: 4px;
+  --swiper-scrollbar-sides-offset: 0.1%;
+  --swiper-scrollbar-bg-color: rgba(182, 20, 20, 0.1);
+  --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
+  --swiper-scrollbar-size: 4px;
+}
+
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
   bottom: 15px;
 }
@@ -452,6 +465,30 @@ img.logo {
 
 @media (max-width: 768px) {
   .deals {
+    padding: 20px 60px;
+  }
+}
+
+/****************************/
+/* swiper freemode */
+
+.freemode {
+  /* padding: 0 190px 100px 190px; */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.swiper-freemode {
+  padding-bottom: 30px;
+}
+
+figurecaption {
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .freemode {
     padding: 20px 60px;
   }
 }
