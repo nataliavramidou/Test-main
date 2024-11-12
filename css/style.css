@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-*:focus {
-  outline: none;
+.input:focus {
   outline: 1px dotted #25252e;
   outline-offset: 8px;
 }
@@ -40,6 +39,11 @@ body {
   position: relative;
 }
 img.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
   max-width: 100%;
   height: auto;
 }
@@ -429,5 +433,25 @@ img.logo {
 
   .copy {
     display: block;
+  }
+}
+/*****************************************************/
+/*      SWIPPER */
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
+  bottom: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid #0b80cc;
+  background-color: white;
+}
+
+.deals {
+  padding: 80px 120px;
+}
+
+@media (max-width: 768px) {
+  .deals {
+    padding: 20px 60px;
   }
 }
