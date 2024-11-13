@@ -429,7 +429,73 @@
         </div>
       </section>
 
-      <section class="controller"></section>
+      <section class="controller">
+        <div class="swiper swiper-big">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/carousel/JC 1344X525 1.jpg" alt="product card" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="item-card">
+        <div class="item-image">
+          <img
+            src="img/carousel/Rectangle 73.jpg"
+            width="300"
+            heigh="300"
+            alt="product-img"
+          />
+        </div>
+        <div class="item-info">
+          <p class="card-heading">
+            Gamme Boucles: Shampoing + Crème rafraîchissante
+          </p>
+          <ul class="details-list">
+            <li class="list-item">
+              <p class="detail-p">Βαζάκι 100ml</p>
+              <p class="price-p">28,50 €</p>
+            </li>
+            <li class="list-item">
+              <p class="detail-p">αμεσα διαθεσιμο</p>
+              <p class="price-p active">24,50 €</p>
+            </li>
+          </ul>
+          <button class="card-btn">προσθηκη στο καλαθι</button>
+          <img
+            class="card-like"
+            src="img/icons/fi_1077035.svg"
+            height="25"
+            width="25"
+            alt="card-like"
+          />
+        </div>
+      </div>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
@@ -667,6 +733,17 @@
             slidesPerView: 3,
             spaceBetween: 20,
           },
+        },
+      });
+
+      const swiperBig = new Swiper(".swiper-big", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      });
+
+      const swiperSmall = new Swiper(".swiper-small", {
+        pagination: {
+          el: ".swiper-pagination",
         },
       });
     </script>

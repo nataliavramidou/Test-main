@@ -450,13 +450,23 @@ img.logo {
   --swiper-scrollbar-size: 4px;
 }
 
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
-  bottom: 15px;
-}
-
-.swiper-pagination-bullet-active {
-  border: 1px solid #0b80cc;
-  background-color: white;
+:root {
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-left: auto;
+  --swiper-pagination-right: 8px;
+  --swiper-pagination-bottom: 15px;
+  --swiper-pagination-top: auto;
+  --swiper-pagination-fraction-color: inherit;
+  --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+  --swiper-pagination-progressbar-size: 4px;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: #000;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
 }
 
 .deals {
@@ -475,7 +485,7 @@ img.logo {
 .freemode {
   /* padding: 0 190px 100px 190px; */
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   padding: 0 20px 20px 20px;
 }
 
@@ -492,3 +502,90 @@ figurecaption {
     padding: 20px 60px;
   }
 }
+
+/*************************/
+/* item card */
+
+.item-card {
+  padding: 20px 20px 40px 20px;
+  max-width: 700px;
+  margin: 10px auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.252);
+  position: relative;
+}
+
+.item-image {
+  position: relative;
+}
+
+.item-image::after {
+  content: "ΝΕΟ";
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #6f7e0d;
+  border-radius: 5px;
+  padding: 8px 10px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* transform: translateY(43%); */
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-heading {
+  font-size: 14px;
+  color: #000000;
+}
+
+.details-list {
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-p {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.price-p {
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.price-p.active {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card-btn {
+  color: #bf1f37;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  background-color: white;
+  border: 1px solid #f2f2f2;
+
+  align-self: flex-start;
+}
+
+.card-like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/*************************/
+/* controller  module */
