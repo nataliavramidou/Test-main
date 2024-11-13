@@ -504,17 +504,23 @@ figurecaption {
 }
 
 /*************************/
-/* item card */
+/* controller*/
 
+.swiper-small {
+  max-width: 700px;
+  margin: -150px auto 100px auto;
+  border-radius: 10px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.115);
+  background-color: white;
+  z-index: 100;
+}
+
+/* item card */
 .item-card {
   padding: 20px 20px 40px 20px;
-  max-width: 700px;
-  margin: 10px auto;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.252);
   position: relative;
 }
 
@@ -587,5 +593,72 @@ figurecaption {
   top: 20px;
   right: 20px;
 }
-/*************************/
-/* controller  module */
+
+@media (max-width: 639px) {
+  .item-card {
+    flex-direction: column;
+  }
+
+  .swiper-small {
+    margin: -40px auto 100px auto;
+  }
+}
+
+/****************************************************/
+/* ACCORDION */
+
+.questions {
+  background-color: #f1f4f1;
+}
+
+.container {
+  background-color: #f1f4f1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 40px;
+}
+
+.questions-box-heading {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #cccccc;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.questions-box-info {
+  text-align: justify;
+  /* padding: 20px 0; */
+  border-bottom: 1px solid #cccccc;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
+
+.question-icon[name="close"] {
+  display: none;
+}
+
+.active .questions-box-info {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.active .question-icon[name="open"] {
+  display: none;
+}
+
+.active .question-icon[name="close"] {
+  display: block;
+}

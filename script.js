@@ -25,3 +25,17 @@ headings.forEach((heading) => {
     heading.parentNode.classList.toggle("active");
   });
 });
+
+var questionHeadings = document.querySelectorAll(".questions-box-heading");
+var infoCols = document.querySelectorAll(".info-col");
+
+questionHeadings.forEach((questionHeading) => {
+  questionHeading.addEventListener("click", () => {
+    questionHeadings.forEach((questionhead) => {
+      if (questionhead != questionHeading)
+        questionhead.parentNode.classList.remove("active");
+    });
+
+    questionHeading.parentNode.classList.toggle("active");
+  });
+});
