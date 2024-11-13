@@ -438,7 +438,7 @@ img.logo {
 /*****************************************************/
 /*      SWIPPER */
 
-:root {
+.swiper-freemode {
   --swiper-scrollbar-border-radius: 10px;
   --swiper-scrollbar-top: auto;
   --swiper-scrollbar-bottom: 4px;
@@ -450,7 +450,7 @@ img.logo {
   --swiper-scrollbar-size: 4px;
 }
 
-:root {
+.swiper-page {
   --swiper-pagination-color: var(--swiper-theme-color);
   --swiper-pagination-left: auto;
   --swiper-pagination-right: 8px;
@@ -505,6 +505,17 @@ figurecaption {
 
 /*************************/
 /* controller*/
+
+.swiper-small {
+  --swiper-pagination-color: #bf1f37;
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 6px;
+  --swiper-pagination-bullet-border-radius: 0;
+}
+
+.swiper-container {
+  padding: 0 20px;
+}
 
 .swiper-small {
   max-width: 700px;
